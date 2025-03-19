@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor MP3</title>
-    <link rel="stylessheet" href="stykes.css" />
+    <title>MP3 Player</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <section>
-        <h1>Titulo</h1>
-        <p>Artista</p>
+    <section class="player">
+        <h1>Title</h1>
+        <p>Artist</p>
         <audio>
             <source />
-        </audio>
-        <input />
-        <div>
-            <button>
-                retroceder
+        </audio id="song">
+        <input type="range" value="0" id="progress" />
+        <div class="controls">
+            <button class="previous">
+                <img src="assets/images/previous.svg"></img>
             </button>
-            <button>
-                play
+            <button class="play">
+                <img src="assets/images/play.svg">
             </button>
-            <button>
-                avanzar
+            <button class="next">
+                <img src="assets/images/next.svg"></img>
             </button>
         </div>
     </section>
